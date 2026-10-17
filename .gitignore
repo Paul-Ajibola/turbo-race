@@ -1,0 +1,5 @@
+# Local / non-web files that start.ng does not serve
+__pycache__/
+*.pyc
+high_score.json
+_*.txt

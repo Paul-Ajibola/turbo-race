@@ -1,0 +1,9 @@
+{
+  "leaderboard": {
+    "stats": [
+      { "key": "score", "label": "Score", "order": "highest" },
+      { "key": "distance", "label": "Distance", "order": "highest" },
+      { "key": "near_misses", "label": "Near misses", "order": "highest" }
+    ]
+  }
+}

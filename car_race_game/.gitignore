@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Game runtime data (regenerated automatically)
+high_score.json
+
+# Temporary/test artifacts
+_*.txt

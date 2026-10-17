@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turbo Pixel Racer</title>
+  <meta name="description" content="Dodge endless traffic on a neon highway. A start.ng browser game.">
+  <link rel="icon" href="./cover.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="startng-card" id="player-card" hidden>
+      <img id="player-face" alt="Your start.ng character">
+      <div class="who">
+        <b id="player-name">Guest</b>
+        <span id="player-account">Not signed in</span>
+      </div>
+      <button id="player-sign-in" type="button">Sign in with start.ng</button>
+    </div>
+    <p id="message" class="message" hidden></p>
+  </header>
+
+  <main class="stage">
+    <canvas id="game" width="800" height="600" tabindex="0" aria-label="Turbo Pixel Racer"></canvas>
+    <p class="hint">
+      <span><kbd>&larr;</kbd><kbd>&rarr;</kbd> / <kbd>A</kbd><kbd>D</kbd> steer &middot;
+      <kbd>&uarr;</kbd> / <kbd>W</kbd> accelerate &middot; <kbd>Space</kbd> nitro</span>
+      <span><kbd>Enter</kbd> start / restart &middot; <kbd>Esc</kbd> back to menu</span>
+    </p>
+  </main>
+
+  <section class="board-panel" aria-label="Leaderboard">
+    <h2>Leaderboard</h2>
+    <ol id="board" class="board">
+      <li class="muted">Loading the top drivers&hellip;</li>
+    </ol>
+  </section>
+
+  <script src="./game.js"></script>
+  <script src="./startng.js"></script>
+</body>
+</html>
